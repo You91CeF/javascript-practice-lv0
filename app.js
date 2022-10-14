@@ -44,3 +44,15 @@ function fullname(){
     lastname = prompt("What is your lastname ?")
     alert("Your fullname is : " + firstname + " " + lastname)
 }
+
+function pairimpair() {
+    let number 
+    number = prompt("give a number")
+
+    if (number%2 == 0) {
+        alert("The number " + number + " is pair")
+    }
+    else {
+        alert("The number " + number + " is impair")
+    }
+}
