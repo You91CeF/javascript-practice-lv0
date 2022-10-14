@@ -36,3 +36,11 @@ function gotoNextPage(){
 //     inputPersonName()
 //     division()
 // }
+
+function fullname(){
+    let firstname
+    firstname = prompt("What is your firstname ?")
+    let lastname
+    lastname = prompt("What is your lastname ?")
+    alert("Your fullname is : " + firstname + " " + lastname)
+}
