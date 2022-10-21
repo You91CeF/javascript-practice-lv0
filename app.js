@@ -219,18 +219,6 @@ function tablemultiplication(){
 
 function primaryNumber() {
     let n = prompt("give a number");
-    let nbdevide = 0;
-    let result;
-    for (let i=1; i<=n; i++) {
-        for (let j=1; j<=i;j++){
-            result = i%j;
-            if (result == 0) {
-                nbdevide++;
-            }
-        }
-        if (nbdevide == 2) {
-            console.log(n);
-        }
-    }
+    
 }
     
