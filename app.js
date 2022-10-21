@@ -217,8 +217,21 @@ function tablemultiplication(){
     }
 }
 
-function primaryNumber() {
-    let n = prompt("give a number");
-    
+function nombreParfait(){
+    let number = prompt("give a number");
+    let sum;
+    for (let i =2; i<=number; i++) {
+        sum = 0;
+        for (let j=1; j<i; j++) {
+            if(i%j == 0) {
+                sum +=j;
+            }
+        }
+        if (sum == i) {
+            console.log("le nombre " + i + " est parfait");
+        }
+    }
 }
+
+
     
