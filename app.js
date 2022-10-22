@@ -234,4 +234,49 @@ function nombreParfait(){
 }
 
 
+function nombreParfaitSociable() {
+    let number = prompt("Give a number > 1");
+    number = Number(number);
+    let N = number;
+    let array = [N];
+    let sum = 0;
+    let j = 0;
+    let flag = 1;
+    let cont = 0;
+    let swi = 0;
+    while ((flag == 1) && (cont < 100)){
+        sum = 0;
+        N = array[array.length-1] 
+        for (let i=N-1; i>0; i--){
+            if (N%i == 0) {
+                sum +=i;
+            }
+        }
+        array.push(sum);
+        swi = array[array.length-1];
+        switch (swi) {
+            case 1:
+                flag =0;
+                if (array.length == 2) {
+                    console.log("N = " + number + " suite aliquote : " + array + " " + number + " est un nombre premier");
+                }
+                else {
+                    console.log("N = " + number + " suite aliquote : " + array);
+                }
+                break;
+            case number:
+                flag = 0;
+                if (array.length == 2) {
+                    console.log("N = " + number + " suite aliquote : " + array + " " + number + " est sociable est parfait d'ordre " + (array.length-1));
+                }
+                else {
+                    console.log("N = " + number + " suite aliquote : " + array + " " + number + " est sociable et amical d'ordre " + (array.length-1));
+                }
+                break;
+            default:
+                flag = 1;
+        }
+    }
+    cont++;
+}
     
